@@ -16,7 +16,9 @@
 
   <nav class="navigation">
     <button onclick="showPage('jobs')">Career Explorer</button>
-    <button onclick="showPage('aiImpact')">Why It Matters</button>
+    <button onclick="showPage('efficiency')">AI & Efficiency</button>
+    <button onclick="showPage('creativity')">AI & Creativity</button>
+    <button onclick="showPage('humanCentered')">Human-Centered Engineering</button>
   </nav>
 
   <!-- PAGE 1: JOBS -->
@@ -24,39 +26,41 @@
     <!-- Populated dynamically via JS -->
   </main>
 
-  <!-- PAGE 2: AI IMPACT -->
-  <main id="aiImpact" class="page hidden">
-    <section class="intro-section">
-      <h2>AI Empowers Engineers</h2>
-      <p>Artificial Intelligence isn’t replacing engineers — it’s supercharging them. By taking over repetitive and complex data-driven tasks, AI frees engineers to do what they do best: innovate, design, and solve humanity’s biggest problems.</p>
-    </section>
-
-    <section class="efficiency-section">
-      <h3><i class="fas fa-clock"></i> Boosting Efficiency</h3>
+  <!-- PAGE 2: AI & EFFICIENCY -->
+  <main id="efficiency" class="page hidden">
+    <section class="section">
+      <h2><i class="fas fa-clock"></i> Boosting Efficiency</h2>
+      <p>AI is transforming engineering by streamlining processes that were previously time-consuming and tedious. Tasks such as simulations, modeling, and debugging can now be automated or accelerated, saving engineers vast amounts of time and resources. This newfound efficiency allows for quicker iteration and faster product development cycles. Engineers can now experiment with multiple versions of a design, optimizing every aspect without wasting valuable resources.</p>
       <ul>
-        <li><strong>Simulation Speed:</strong> What used to take days of modeling now takes hours, thanks to AI’s speed in running simulations and analyzing data. Engineers can iterate designs much faster.</li>
-        <li><strong>Automated Testing:</strong> AI helps automate testing and debugging, eliminating the manual effort required to find flaws in complex systems.</li>
-        <li><strong>Predictive Maintenance:</strong> AI predicts when equipment or machinery will need maintenance, reducing downtime and preventing costly failures in factories or power plants.</li>
+        <li><strong>Faster Prototyping:</strong> Engineers use AI-driven simulations to test prototypes in virtual environments, eliminating the need for costly physical prototypes in many cases.</li>
+        <li><strong>Predictive Analytics:</strong> AI can analyze data and predict issues before they happen, allowing for preemptive action that improves efficiency and prevents costly downtime.</li>
+        <li><strong>Automated Scheduling:</strong> AI systems automatically generate the most efficient production schedules, factoring in machine downtime, material availability, and workforce optimization.</li>
       </ul>
     </section>
+  </main>
 
-    <section class="creativity-section">
-      <h3><i class="fas fa-lightbulb"></i> Unleashing Creativity</h3>
-      <p>By handling the heavy lifting of data processing and task automation, AI frees engineers to focus on the most important aspects of their work: creative problem solving, innovation, and improving lives. Here’s how:</p>
+  <!-- PAGE 3: AI & CREATIVITY -->
+  <main id="creativity" class="page hidden">
+    <section class="section">
+      <h2><i class="fas fa-lightbulb"></i> Unleashing Creativity</h2>
+      <p>AI isn’t just about automation — it also helps engineers tap into their creative potential. AI can analyze existing solutions, uncover patterns, and propose new, unconventional ideas. By combining human intuition and creative problem-solving with AI's data-driven insights, engineers can push the boundaries of what’s possible, creating innovative products and solutions that were previously unimaginable.</p>
       <ul>
-        <li><strong>Generative Design:</strong> Engineers use AI tools to generate hundreds or even thousands of possible design solutions based on set parameters. This gives them more time to explore truly innovative ideas.</li>
-        <li><strong>Innovative Materials:</strong> AI helps materials engineers discover new materials and properties by analyzing massive datasets of material science, paving the way for breakthroughs in aerospace, healthcare, and electronics.</li>
-        <li><strong>Real-Time Monitoring:</strong> With AI monitoring real-time data, engineers can focus on interpreting the information to make decisions, rather than spend time analyzing raw data manually.</li>
+        <li><strong>Generative Design:</strong> AI algorithms generate multiple design alternatives based on a set of input parameters. Engineers can explore various configurations and choose the one that best meets their objectives.</li>
+        <li><strong>New Material Discovery:</strong> AI helps materials engineers identify innovative materials with superior properties for use in fields like aerospace, healthcare, and electronics.</li>
+        <li><strong>AI-Enhanced Prototyping:</strong> AI can optimize prototypes not just for functionality, but for aesthetic appeal and design elegance, expanding creative possibilities.</li>
       </ul>
     </section>
+  </main>
 
-    <section class="human-focus-section">
-      <h3><i class="fas fa-users"></i> Human-Centered Engineering</h3>
-      <p>AI enables engineers to tackle projects that directly benefit human life, rather than getting bogged down in routine tasks. By freeing up time, engineers can focus on:</p>
+  <!-- PAGE 4: HUMAN-CENTERED ENGINEERING -->
+  <main id="humanCentered" class="page hidden">
+    <section class="section">
+      <h2><i class="fas fa-users"></i> Human-Centered Engineering</h2>
+      <p>AI doesn’t replace the human aspect of engineering, it enhances it. Engineers can now use AI to focus more on solving complex, real-world problems that improve quality of life. From healthcare to sustainable energy, AI empowers engineers to develop solutions that are not only efficient but also more human-centered and beneficial to society.</p>
       <ul>
-        <li><strong>Healthcare Advancements:</strong> AI helps biomedical engineers create prosthetics, assistive technologies, and diagnostic tools that improve patients' lives.</li>
-        <li><strong>Environmental Solutions:</strong> Environmental engineers use AI to model and predict climate changes, clean water, and air quality, ensuring a safer and cleaner world for future generations.</li>
-        <li><strong>Smart Cities:</strong> Civil engineers deploy AI for smart traffic management, energy conservation, and sustainability, helping to build cities that work better for everyone.</li>
+        <li><strong>Medical Advancements:</strong> AI helps biomedical engineers create adaptive prosthetics, smart wearables, and diagnostic tools that can significantly improve patient outcomes.</li>
+        <li><strong>Environmental Impact:</strong> AI helps environmental engineers monitor pollution levels in real time and predict future trends, allowing for more proactive measures to protect the planet.</li>
+        <li><strong>Urban Development:</strong> Civil engineers are using AI for smart city initiatives that optimize energy use, transportation, and resource distribution for improved urban living.</li>
       </ul>
     </section>
   </main>
@@ -68,3 +72,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
