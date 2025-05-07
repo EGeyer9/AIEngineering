@@ -45,9 +45,8 @@ jobs.forEach((job, index) => {
   container.appendChild(card);
 });
 
-// Section switching logic
-function showSection(id) {
-  document.getElementById("jobsSection").classList.add("hidden");
-  document.getElementById("impactSection").classList.add("hidden");
-  document.getElementById(id).classList.remove("hidden");
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
+  document.getElementById(page).classList.remove('hidden');
 }
+
