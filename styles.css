@@ -123,6 +123,36 @@ footer {
   margin-top: 2rem;
 }
 
+/* Tabs styling */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background-color: #38bdf8;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.tab:hover {
+  background-color: #3b82f6;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content:not(.hidden) {
+  display: block;
+}
+
 /* Animations */
 @keyframes slideFadeIn {
   0% { opacity: 0; transform: translateY(40px); }
@@ -150,3 +180,4 @@ section p {
 section {
   margin-bottom: 2rem;
 }
+
