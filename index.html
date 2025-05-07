@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engineering & AI Careers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Engineering + AI = The Future</h1>
+    <p>Click each card to explore how AI is reshaping real engineering jobs.</p>
+    <nav>
+      <button onclick="showSection('jobsSection')">Career Examples</button>
+      <button onclick="showSection('impactSection')">Why It Matters</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Career Cards Section -->
+    <section id="jobsSection">
+      <div id="jobs"></div>
+    </section>
+
+    <!-- Why It Matters Section -->
+    <section id="impactSection" class="hidden">
+      <div class="impact-container">
+        <h2><i class="fas fa-brain"></i> Why AI in Engineering Matters</h2>
+        <p class="intro">AI isn’t just about automation — it’s a tool that lets engineers unlock more of their human potential.</p>
+
+        <div class="impact-point">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Efficiency That Frees Up Time</h3>
+            <p>With AI automating repetitive calculations, simulations, and testing, engineers spend less time grinding and more time refining ideas and exploring alternatives.</p>
+          </div>
+        </div>
+
+        <div class="impact-point">
+          <i class="fas fa-lightbulb"></i>
+          <div>
+            <h3>Creativity Amplified</h3>
+            <p>AI-powered design tools like generative modeling and topology optimization expand the creative sandbox, suggesting solutions no human alone might have imagined.</p>
+          </div>
+        </div>
+
+        <div class="impact-point">
+          <i class="fas fa-users-cog"></i>
+          <div>
+            <h3>Human-Centered Focus</h3>
+            <p>By reducing technical overhead, engineers can focus more on empathy-driven design — thinking about accessibility, ethics, sustainability, and the real-world impact of their solutions.</p>
+          </div>
+        </div>
+
+        <div class="impact-point">
+          <i class="fas fa-globe-americas"></i>
+          <div>
+            <h3>Solving Bigger Problems</h3>
+            <p>AI opens doors to engineering for climate modeling, bioengineering, and humanitarian tech — areas that benefit from big-picture thinking and creative innovation.</p>
+          </div>
+        </div>
+
+        <div class="impact-image">
+          <img src="https://cdn.pixabay.com/photo/2022/09/20/17/37/ai-7467025_1280.jpg" alt="AI Collaboration" />
+          <p class="caption">AI doesn’t replace engineers — it empowers them to think bigger, faster, and more humanely.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Evan Geyer, a sophomore mechanical engineering major at UMass Amherst.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
