@@ -3,9 +3,6 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #111827;
   color: #f3f4f6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .hidden {
@@ -57,8 +54,9 @@ main {
 
 .card {
   background-color: #1e293b;
-  width: 340px;
-  padding: 1.5rem;
+  width: 28%;
+  min-width: 280px;
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -71,6 +69,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-size: 1.05rem;
 }
 
 .card:hover {
@@ -81,15 +80,12 @@ main {
 .card h2 {
   margin: 0 0 0.5rem;
   color: #facc15;
+  font-size: 1.3rem;
 }
 
 .card i {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #38bdf8;
-  margin-bottom: 0.75rem;
-}
-
-.card section {
   margin-bottom: 0.75rem;
 }
 
@@ -111,22 +107,20 @@ main {
 }
 
 .info-page {
-  padding: 3rem 2rem;
-  max-width: 100%;
-  width: 90%;
-  margin: 0 auto;
-  animation: fadeIn 1s ease-in;
+  padding: 4rem 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
   background-color: #1e293b;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  min-height: calc(100vh - 200px); /* adjust for header/footer */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  animation: fadeIn 1s ease-in;
+  font-size: 1.2rem;
+  min-height: calc(100vh - 200px);
 }
 
 .info-page h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #93c5fd;
   margin-bottom: 1rem;
 }
@@ -137,20 +131,21 @@ main {
 }
 
 .info-page ul {
-  margin: 1rem 0;
-  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
   list-style-type: disc;
 }
 
 .info-page li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 footer {
   text-align: center;
-  padding: 1.2rem;
+  padding: 1.5rem;
   background: #1f2937;
   color: #cbd5e1;
+  font-size: 1rem;
   margin-top: auto;
 }
 
@@ -168,6 +163,7 @@ footer {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
