@@ -112,4 +112,82 @@ main {
   background-color: #1e293b;
   border-radius: 16px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  animation:
+  animation: slideFadeIn 1.2s ease-out;
+}
+
+.impact-container h2 {
+  font-size: 2rem;
+  color: #facc15;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.impact-container .intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.impact-point {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.impact-point i {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.impact-point h3 {
+  margin: 0;
+  color: #93c5fd;
+}
+
+.impact-point p {
+  margin: 0.3rem 0 0;
+}
+
+.impact-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.impact-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+.impact-image .caption {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-top: 0.5rem;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #1f2937;
+  color: #cbd5e1;
+  margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes slideFadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dropIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
