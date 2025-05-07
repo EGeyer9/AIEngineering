@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engineering & AI Careers</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -27,21 +27,25 @@
 
   <main id="why-it-matters" class="page hidden">
     <h2>Why AI Matters in Engineering</h2>
-    <section id="efficiency">
+    <div class="tabs">
+      <button class="tab" onclick="showTab('efficiency')">Efficiency</button>
+      <button class="tab" onclick="showTab('creativity')">Creativity</button>
+      <button class="tab" onclick="showTab('human-centered')">Human-Centered Engineering</button>
+    </div>
+
+    <section id="efficiency" class="tab-content">
       <h3><i class="fas fa-chart-line"></i> Efficiency</h3>
       <p>AI's ability to handle complex computations and simulations allows engineers to focus on higher-level problem-solving, speeding up the process and increasing overall productivity. Tasks like data analysis, design iterations, and optimization can be done much faster, enabling more projects to be completed in less time.</p>
     </section>
-    <section id="creativity">
+
+    <section id="creativity" class="tab-content hidden">
       <h3><i class="fas fa-lightbulb"></i> Creativity</h3>
       <p>AI frees up time for engineers to think outside the box, tackling challenges that require innovation. With AI taking care of repetitive tasks and tedious calculations, engineers can focus more on designing new solutions, pushing the boundaries of what’s possible, and creating groundbreaking technologies.</p>
     </section>
-    <section id="human-centered">
+
+    <section id="human-centered" class="tab-content hidden">
       <h3><i class="fas fa-user"></i> Human-Centered Engineering</h3>
       <p>With AI handling the routine, engineers can prioritize human aspects, such as user experience, safety, and ethical considerations. AI models are increasingly being used to predict outcomes, while engineers ensure that designs meet human needs, preferences, and societal values.</p>
-    </section>
-    <section id="automation">
-      <h3><i class="fas fa-robot"></i> Automation and Precision</h3>
-      <p>AI-powered systems allow for greater precision and automation in manufacturing and design processes. Tasks that once required manual oversight can now be automated with AI, resulting in higher quality and consistency, lower errors, and reduced waste.</p>
     </section>
   </main>
 
@@ -52,5 +56,6 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
