@@ -44,13 +44,3 @@ jobs.forEach((job, index) => {
 
   container.appendChild(card);
 });
-
-
-
-
-
-
-
-
-
-
