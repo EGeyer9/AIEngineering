@@ -63,6 +63,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
+  margin-top: 2rem;
 }
 
 .card {
@@ -182,5 +183,6 @@ section p {
 section {
   margin-bottom: 2rem;
 }
+
 
 
