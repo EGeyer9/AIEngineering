@@ -23,32 +23,39 @@ header p {
   color: #cbd5e1;
 }
 
-header nav button {
-  margin: 1rem 0.5rem 0;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  background-color: #2563eb;
-  color: white;
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+button {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-header nav button:hover {
-  background-color: #1d4ed8;
+button:hover {
+  background-color: #2563eb;
 }
 
-main {
+.page {
+  display: none;
   padding: 2rem;
 }
 
-/* Job Cards */
-#jobs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+.page.hidden {
+  display: none;
+}
+
+.page:not(.hidden) {
+  display: block;
 }
 
 .card {
@@ -95,83 +102,13 @@ main {
 .card .ai-info {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease, padding 0.4s ease;
-  padding-top: 0;
+  transition: max-height 0.6s ease;
 }
 
 .card.expanded .ai-info {
   max-height: 300px;
-  padding-top: 0.75rem;
 }
 
-/* Impact Section */
-.impact-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-  background-color: #1e293b;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-  animation: slideFadeIn 1.2s ease-out;
-}
-
-.impact-container h2 {
-  font-size: 2rem;
-  color: #facc15;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.impact-container .intro {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  margin-bottom: 2rem;
-}
-
-.impact-point {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.impact-point i {
-  font-size: 2rem;
-  color: #38bdf8;
-}
-
-.impact-point h3 {
-  margin: 0;
-  color: #93c5fd;
-}
-
-.impact-point p {
-  margin: 0.3rem 0 0;
-}
-
-.impact-image {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.impact-image img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #3b82f6;
-}
-
-.impact-image .caption {
-  font-size: 0.9rem;
-  color: #cbd5e1;
-  margin-top: 0.5rem;
-}
-
-/* Utility */
-.hidden {
-  display: none;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 1.2rem;
@@ -190,4 +127,9 @@ footer {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+.hidden {
+  display: none;
+}
+
 
