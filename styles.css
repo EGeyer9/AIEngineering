@@ -3,6 +3,9 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #111827;
   color: #f3f4f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hidden {
@@ -109,12 +112,17 @@ main {
 
 .info-page {
   padding: 3rem 2rem;
-  max-width: 90%;
+  max-width: 100%;
+  width: 90%;
   margin: 0 auto;
   animation: fadeIn 1s ease-in;
   background-color: #1e293b;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  min-height: calc(100vh - 200px); /* adjust for header/footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-page h2 {
@@ -143,7 +151,7 @@ footer {
   padding: 1.2rem;
   background: #1f2937;
   color: #cbd5e1;
-  margin-top: 2rem;
+  margin-top: auto;
 }
 
 @keyframes slideFadeIn {
@@ -160,6 +168,7 @@ footer {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
