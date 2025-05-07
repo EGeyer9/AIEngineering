@@ -16,7 +16,7 @@
   <nav>
     <ul>
       <li><button onclick="showPage('jobs')">Job Examples</button></li>
-      <li><button onclick="showPage('why-it-matters')">Why It Matters</button></li>
+      <li><button onclick="showPage('why-it-matters')">Why AI Matters</button></li>
     </ul>
   </nav>
 
@@ -27,25 +27,25 @@
 
   <main id="why-it-matters" class="page hidden">
     <h2>Why AI Matters in Engineering</h2>
-    <div class="tabs">
-      <button class="tab" onclick="showTab('efficiency')">Efficiency</button>
-      <button class="tab" onclick="showTab('creativity')">Creativity</button>
-      <button class="tab" onclick="showTab('human-centered')">Human-Centered Engineering</button>
+    <div class="buttons">
+      <button onclick="showContent('efficiency')">Efficiency</button>
+      <button onclick="showContent('creativity')">Creativity</button>
+      <button onclick="showContent('human-centered')">Human-Centered Engineering</button>
     </div>
 
-    <section id="efficiency" class="tab-content">
+    <section id="efficiency" class="content hidden">
       <h3><i class="fas fa-chart-line"></i> Efficiency</h3>
-      <p>AI's ability to handle complex computations and simulations allows engineers to focus on higher-level problem-solving, speeding up the process and increasing overall productivity. Tasks like data analysis, design iterations, and optimization can be done much faster, enabling more projects to be completed in less time.</p>
+      <p>AI allows engineers to automate repetitive and time-consuming tasks, making their workflow more efficient. For instance, complex simulations and optimization processes can be automated with AI, reducing the time needed for manual calculations. This accelerates design iterations, helps meet tight deadlines, and maximizes resource allocation. With AI-powered tools, engineers can make more informed decisions quickly, allowing for faster production and innovation.</p>
     </section>
 
-    <section id="creativity" class="tab-content hidden">
+    <section id="creativity" class="content hidden">
       <h3><i class="fas fa-lightbulb"></i> Creativity</h3>
-      <p>AI frees up time for engineers to think outside the box, tackling challenges that require innovation. With AI taking care of repetitive tasks and tedious calculations, engineers can focus more on designing new solutions, pushing the boundaries of what’s possible, and creating groundbreaking technologies.</p>
+      <p>With AI handling tedious tasks, engineers can focus on the more creative aspects of their work. AI empowers engineers to experiment with different designs and concepts, simulate multiple iterations in seconds, and even visualize outcomes. This gives engineers the freedom to explore new ideas without the constraints of time-consuming manual tasks. Whether it's designing futuristic vehicles or cutting-edge biomedical devices, AI provides engineers with more time to innovate and push the boundaries of what’s possible.</p>
     </section>
 
-    <section id="human-centered" class="tab-content hidden">
+    <section id="human-centered" class="content hidden">
       <h3><i class="fas fa-user"></i> Human-Centered Engineering</h3>
-      <p>With AI handling the routine, engineers can prioritize human aspects, such as user experience, safety, and ethical considerations. AI models are increasingly being used to predict outcomes, while engineers ensure that designs meet human needs, preferences, and societal values.</p>
+      <p>AI enhances the human side of engineering by allowing engineers to focus on human needs and societal impacts. With AI handling data analysis and optimization, engineers can prioritize user experience, safety, and accessibility. For example, AI can simulate real-world scenarios to ensure that products are safe and user-friendly. In healthcare, AI helps create personalized prosthetics by analyzing patient data, ensuring that human needs remain at the core of every design. AI supports engineers in building technologies that truly benefit society.</p>
     </section>
   </main>
 
@@ -56,6 +56,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
