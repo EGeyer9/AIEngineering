@@ -56,7 +56,8 @@ main {
   background-color: #1e293b;
   width: 28%;
   min-width: 280px;
-  padding: 2rem;
+  height: 300px; /* doubled height */
+  padding: 2.5rem 1.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -69,7 +70,7 @@ main {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
 }
 
 .card:hover {
@@ -80,13 +81,13 @@ main {
 .card h2 {
   margin: 0 0 0.5rem;
   color: #facc15;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .card i {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: #38bdf8;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .card section span {
@@ -107,37 +108,36 @@ main {
 }
 
 .info-page {
-  padding: 4rem 3rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #1e293b;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  animation: fadeIn 1s ease-in;
-  font-size: 1.2rem;
+  padding: 5rem 4rem;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: transparent;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   min-height: calc(100vh - 200px);
+  animation: fadeIn 0.8s ease-in;
 }
 
 .info-page h2 {
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   color: #93c5fd;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .info-page i {
   color: #38bdf8;
-  margin-right: 0.5rem;
+  margin-right: 0.7rem;
 }
 
 .info-page ul {
-  margin: 1.5rem 0;
-  padding-left: 1.5rem;
+  margin: 2rem 0;
+  padding-left: 2rem;
   list-style-type: disc;
 }
 
 .info-page li {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 footer {
@@ -163,6 +163,7 @@ footer {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
