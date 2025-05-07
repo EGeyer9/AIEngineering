@@ -36,7 +36,6 @@ header nav a {
   color: #60a5fa;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 header nav a:hover {
@@ -49,11 +48,13 @@ main {
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .card {
   background-color: #1e293b;
-  width: 320px;
+  width: 340px;
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -80,7 +81,7 @@ main {
 }
 
 .card i {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #38bdf8;
   margin-bottom: 0.75rem;
 }
@@ -108,8 +109,8 @@ main {
 
 .info-page {
   padding: 3rem 2rem;
-  max-width: 900px;
-  margin: 0 auto 2rem;
+  max-width: 90%;
+  margin: 0 auto;
   animation: fadeIn 1s ease-in;
   background-color: #1e293b;
   border-radius: 16px;
@@ -128,8 +129,7 @@ main {
 }
 
 .info-page ul {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding-left: 1.25rem;
   list-style-type: disc;
 }
@@ -160,6 +160,7 @@ footer {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
