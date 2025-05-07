@@ -54,7 +54,16 @@ function showPage(page) {
   document.getElementById(page).classList.remove('hidden');
 }
 
+// Show active tab content
+function showTab(tab) {
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => content.classList.add('hidden'));
+  document.getElementById(tab).classList.remove('hidden');
+}
+
 // Initial page load
 showPage('jobs');
+showTab('efficiency');
+
 
 
