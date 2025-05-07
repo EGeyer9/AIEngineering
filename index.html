@@ -5,53 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engineering & AI Careers</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4ef257fdf6.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h1>Engineering + AI = The Future</h1>
     <p>Click each card to explore how AI is reshaping real engineering jobs.</p>
     <nav>
-      <a href="#jobs">Jobs</a>
-      <a href="#efficiency">Efficiency</a>
-      <a href="#creativity">Creativity</a>
-      <a href="#human">Human Focus</a>
+      <a href="#" onclick="showSection('jobs')">Jobs</a>
+      <a href="#" onclick="showSection('efficiency')">Efficiency</a>
+      <a href="#" onclick="showSection('creativity')">Creativity</a>
+      <a href="#" onclick="showSection('human')">Human Focus</a>
     </nav>
   </header>
 
-  <main id="jobs"></main>
+  <main id="jobs" class="section"></main>
 
-  <section id="efficiency" class="info-page">
+  <section id="efficiency" class="info-page section hidden">
     <h2><i class="fas fa-tachometer-alt"></i> Boosting Engineering Efficiency with AI</h2>
-    <p>AI is revolutionizing efficiency across all fields of engineering. From real-time monitoring and predictive maintenance to generative design and autonomous control systems, the integration of AI leads to smarter, faster decision-making and less wasted resources.</p>
+    <p>AI is revolutionizing efficiency across all fields of engineering...</p>
     <ul>
-      <li><strong>Mechanical Engineering:</strong> AI speeds up the prototyping process using digital twins and topology optimization.</li>
-      <li><strong>Civil Engineering:</strong> AI-powered traffic simulations reduce congestion and environmental impact in smart cities.</li>
-      <li><strong>Industrial Engineering:</strong> AI tools optimize production schedules, minimizing downtime and maximizing throughput.</li>
+      <li><strong><i class="fas fa-cogs"></i> Mechanical Engineering:</strong> AI speeds up prototyping using digital twins and topology optimization.</li>
+      <li><strong><i class="fas fa-city"></i> Civil Engineering:</strong> AI-powered traffic simulations reduce congestion and impact.</li>
+      <li><strong><i class="fas fa-warehouse"></i> Industrial Engineering:</strong> AI tools optimize production and minimize downtime.</li>
     </ul>
-    <p>When machines learn from data and adapt autonomously, engineers can focus on innovation instead of repetitive optimization. The result? Projects delivered faster, cheaper, and with higher quality.</p>
+    <p>When machines learn from data and adapt autonomously, engineers can focus on innovation.</p>
   </section>
 
-  <section id="creativity" class="info-page">
+  <section id="creativity" class="info-page section hidden">
     <h2><i class="fas fa-lightbulb"></i> Amplifying Creativity with AI</h2>
-    <p>AI isn't just about efficiency—it's a creativity partner. Engineers are now using AI to push the boundaries of design, discover unseen solutions, and solve problems in ways previously unimaginable.</p>
+    <p>AI isn't just about efficiency—it's a creativity partner...</p>
     <ul>
-      <li><strong>Generative Design:</strong> AI algorithms generate thousands of design alternatives, helping mechanical engineers create lightweight yet strong structures.</li>
-      <li><strong>Architecture and Civil Engineering:</strong> AI helps simulate not only structural strength but also aesthetic harmony and pedestrian comfort.</li>
-      <li><strong>Biomedical Engineering:</strong> AI aids in personalizing prosthetics and medical devices based on user-specific biometrics and behavior.</li>
+      <li><strong><i class="fas fa-cubes"></i> Generative Design:</strong> AI generates thousands of design ideas to optimize form and function.</li>
+      <li><strong><i class="fas fa-drafting-compass"></i> Architecture & Civil:</strong> AI aids structural and aesthetic planning.</li>
+      <li><strong><i class="fas fa-heartbeat"></i> Biomedical Engineering:</strong> AI enables highly personalized prosthetics and devices.</li>
     </ul>
-    <p>With AI as a tool, engineers become not just builders—but artists, futurists, and inventors capable of dreaming bigger and building bolder.</p>
+    <p>With AI, engineers evolve into inventors, artists, and visionaries.</p>
   </section>
 
-  <section id="human" class="info-page">
+  <section id="human" class="info-page section hidden">
     <h2><i class="fas fa-user-friends"></i> The Human Side of Engineering in the Age of AI</h2>
-    <p>As AI takes on more technical and repetitive tasks, the uniquely human aspects of engineering become even more important. Empathy, ethics, communication, and interdisciplinary thinking are now at the forefront.</p>
+    <p>As AI handles repetitive tasks, empathy, ethics, and communication rise in importance...</p>
     <ul>
-      <li><strong>Ethical Design:</strong> Engineers must guide AI systems with ethical considerations, avoiding bias, and ensuring fairness.</li>
-      <li><strong>Human-Centered Design:</strong> Mechanical and biomedical engineers must ensure that products enhance the user experience—not just technically succeed.</li>
-      <li><strong>Collaboration:</strong> Teamwork, leadership, and the ability to communicate across disciplines are more vital than ever.</li>
+      <li><strong><i class="fas fa-scale-balanced"></i> Ethics:</strong> Engineers must ensure fairness and transparency in AI use.</li>
+      <li><strong><i class="fas fa-user-gear"></i> Human-Centered Design:</strong> Solutions must prioritize real people and needs.</li>
+      <li><strong><i class="fas fa-people-arrows"></i> Collaboration:</strong> Cross-disciplinary teamwork is essential in modern projects.</li>
     </ul>
-    <p>Engineers today aren't just solving equations—they're shaping the social, ethical, and cultural impact of technology. And that makes the human side of engineering not just relevant, but essential.</p>
+    <p>Today’s engineers must lead both technically and socially.</p>
   </section>
 
   <footer>
@@ -59,8 +59,15 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
+
 
 
 
