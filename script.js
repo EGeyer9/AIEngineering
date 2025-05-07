@@ -8,7 +8,17 @@ const jobs = [
   { title: "Software Engineer", icon: "code", traditional: "Develops software applications, tools, and systems.", aiIntegration: "Uses GitHub Copilot to autocomplete functions and accelerate debugging." },
   { title: "Biomedical Engineer", icon: "heartbeat", traditional: "Designs prosthetics, imaging devices, and medical systems.", aiIntegration: "Collaborates on adaptive AI prosthetics that learn patient gait patterns." },
   { title: "Chemical Engineer", icon: "flask", traditional: "Designs processes for producing fuels, drugs, and materials.", aiIntegration: "Models chemical reactions and predicts new compounds using AI chemistry platforms." },
-  { title: "Industrial Engineer", icon: "warehouse", traditional: "Optimizes manufacturing and logistics processes
+  { title: "Industrial Engineer", icon: "warehouse", traditional: "Optimizes manufacturing and logistics processes.", aiIntegration: "Uses predictive AI to forecast machine failures and balance production loads." },
+  { title: "Materials Engineer", icon: "cube", traditional: "Develops new materials for aerospace, biomedical, and electronics.", aiIntegration: "Trains AI models to find high-performance material blends from datasets." },
+  { title: "Automotive Engineer", icon: "car", traditional: "Designs vehicles and their electronic systems.", aiIntegration: "Collaborates on AI-enhanced self-driving features using sensor fusion." },
+  { title: "Nuclear Engineer", icon: "radiation", traditional: "Designs and monitors systems involving nuclear energy.", aiIntegration: "Applies AI to watch reactor sensor data and prevent thermal or radiation leaks." }
+];
+
+// Job cards section (dynamically populated)
+const container = document.getElementById("job-cards");
+
+jobs.forEach((job, index
+
 
 
 
