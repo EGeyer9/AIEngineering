@@ -57,11 +57,12 @@ main {
   display: block;
 }
 
+/* Job Cards Layout */
 .job-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  justify-items: center;
 }
 
 .card {
@@ -115,42 +116,43 @@ main {
   max-height: 300px;
 }
 
-footer {
-  text-align: center;
-  padding: 1.2rem;
-  background: #1f2937;
-  color: #cbd5e1;
-  margin-top: 2rem;
-}
-
-/* Tabs styling */
-.tabs {
+/* Buttons for "Why It Matters" section */
+.buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
-.tab {
+.buttons button {
   background-color: #38bdf8;
   color: white;
   padding: 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
-.tab:hover {
+.buttons button:hover {
   background-color: #3b82f6;
 }
 
-.tab-content {
+/* Content sections for Efficiency, Creativity, and Human-Centered Engineering */
+.content {
   display: none;
 }
 
-.tab-content:not(.hidden) {
+.content:not(.hidden) {
   display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background: #1f2937;
+  color: #cbd5e1;
+  margin-top: 2rem;
 }
 
 /* Animations */
@@ -180,4 +182,5 @@ section p {
 section {
   margin-bottom: 2rem;
 }
+
 
