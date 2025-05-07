@@ -4,52 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Engineering & AI Careers</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h1>Engineering + AI = The Future</h1>
     <p>Click each card to explore how AI is reshaping real engineering jobs.</p>
+    <nav>
+      <a href="#jobs">Jobs</a>
+      <a href="#efficiency">Efficiency</a>
+      <a href="#creativity">Creativity</a>
+      <a href="#human">Human Focus</a>
+    </nav>
   </header>
 
-  <nav>
+  <main id="jobs"></main>
+
+  <section id="efficiency" class="info-page">
+    <h2><i class="fas fa-tachometer-alt"></i> Boosting Engineering Efficiency with AI</h2>
+    <p>AI is revolutionizing efficiency across all fields of engineering. From real-time monitoring and predictive maintenance to generative design and autonomous control systems, the integration of AI leads to smarter, faster decision-making and less wasted resources.</p>
     <ul>
-      <li><button onclick="showPage('jobs')">Job Examples</button></li>
-      <li><button onclick="showPage('why-it-matters')">Why AI Matters</button></li>
+      <li><strong>Mechanical Engineering:</strong> AI speeds up the prototyping process using digital twins and topology optimization.</li>
+      <li><strong>Civil Engineering:</strong> AI-powered traffic simulations reduce congestion and environmental impact in smart cities.</li>
+      <li><strong>Industrial Engineering:</strong> AI tools optimize production schedules, minimizing downtime and maximizing throughput.</li>
     </ul>
-  </nav>
+    <p>When machines learn from data and adapt autonomously, engineers can focus on innovation instead of repetitive optimization. The result? Projects delivered faster, cheaper, and with higher quality.</p>
+  </section>
 
-  <!-- Job Examples Section -->
-  <main id="jobs" class="page">
-    <h2>Engineering Career Examples</h2>
-    <div id="job-cards" class="job-cards"></div>
-  </main>
+  <section id="creativity" class="info-page">
+    <h2><i class="fas fa-lightbulb"></i> Amplifying Creativity with AI</h2>
+    <p>AI isn't just about efficiency—it's a creativity partner. Engineers are now using AI to push the boundaries of design, discover unseen solutions, and solve problems in ways previously unimaginable.</p>
+    <ul>
+      <li><strong>Generative Design:</strong> AI algorithms generate thousands of design alternatives, helping mechanical engineers create lightweight yet strong structures.</li>
+      <li><strong>Architecture and Civil Engineering:</strong> AI helps simulate not only structural strength but also aesthetic harmony and pedestrian comfort.</li>
+      <li><strong>Biomedical Engineering:</strong> AI aids in personalizing prosthetics and medical devices based on user-specific biometrics and behavior.</li>
+    </ul>
+    <p>With AI as a tool, engineers become not just builders—but artists, futurists, and inventors capable of dreaming bigger and building bolder.</p>
+  </section>
 
-  <!-- Why AI Matters Section -->
-  <main id="why-it-matters" class="page hidden">
-    <h2>Why AI Matters in Engineering</h2>
-    <div class="buttons">
-      <button onclick="showContent('efficiency')">Efficiency</button>
-      <button onclick="showContent('creativity')">Creativity</button>
-      <button onclick="showContent('human-centered')">Human-Centered Engineering</button>
-    </div>
-
-    <section id="efficiency" class="content hidden">
-      <h3><i class="fas fa-chart-line"></i> Efficiency</h3>
-      <p>AI streamlines engineering tasks, automating repetitive calculations and simulations. This saves time, allowing engineers to focus on higher-level problem-solving. Automated systems can handle tasks such as optimizing designs, reducing trial-and-error in simulations, and processing large datasets quickly, which accelerates the development process and improves accuracy.</p>
-    </section>
-
-    <section id="creativity" class="content hidden">
-      <h3><i class="fas fa-lightbulb"></i> Creativity</h3>
-      <p>AI empowers engineers by freeing them from mundane tasks, allowing for more time to focus on innovation. For instance, AI tools can suggest alternative design ideas, explore new materials, or predict unforeseen problems, enabling engineers to push the boundaries of what’s possible in fields such as robotics, renewable energy, and aerospace technology.</p>
-    </section>
-
-    <section id="human-centered" class="content hidden">
-      <h3><i class="fas fa-user"></i> Human-Centered Engineering</h3>
-      <p>AI enables engineers to create products and systems that are more responsive to human needs. In biomedical engineering, for example, AI is used to design prosthetics that adapt to individual movement patterns. In automotive engineering, AI improves safety features by predicting human driver behavior and adjusting vehicle responses accordingly, ultimately creating a better user experience.</p>
-    </section>
-  </main>
+  <section id="human" class="info-page">
+    <h2><i class="fas fa-user-friends"></i> The Human Side of Engineering in the Age of AI</h2>
+    <p>As AI takes on more technical and repetitive tasks, the uniquely human aspects of engineering become even more important. Empathy, ethics, communication, and interdisciplinary thinking are now at the forefront.</p>
+    <ul>
+      <li><strong>Ethical Design:</strong> Engineers must guide AI systems with ethical considerations, avoiding bias, and ensuring fairness.</li>
+      <li><strong>Human-Centered Design:</strong> Mechanical and biomedical engineers must ensure that products enhance the user experience—not just technically succeed.</li>
+      <li><strong>Collaboration:</strong> Teamwork, leadership, and the ability to communicate across disciplines are more vital than ever.</li>
+    </ul>
+    <p>Engineers today aren't just solving equations—they're shaping the social, ethical, and cultural impact of technology. And that makes the human side of engineering not just relevant, but essential.</p>
+  </section>
 
   <footer>
     <p>Created by Evan Geyer, a sophomore mechanical engineering major at UMass Amherst.</p>
@@ -58,6 +61,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
