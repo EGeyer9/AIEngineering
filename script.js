@@ -1,4 +1,3 @@
-// Job examples data
 const jobs = [
   { title: "Mechanical Engineer", icon: "cogs", traditional: "Designs machines and systems like HVAC and engines.", aiIntegration: "Uses generative design tools to automatically propose optimized models for mechanical parts." },
   { title: "Civil Engineer", icon: "city", traditional: "Plans and supervises infrastructure like bridges and buildings.", aiIntegration: "Simulates traffic flow and structural resilience using AI-powered modeling." },
@@ -14,10 +13,38 @@ const jobs = [
   { title: "Nuclear Engineer", icon: "radiation", traditional: "Designs and monitors systems involving nuclear energy.", aiIntegration: "Applies AI to watch reactor sensor data and prevent thermal or radiation leaks." }
 ];
 
-// Job cards section (dynamically populated)
-const container = document.getElementById("job-cards");
+const container = document.getElementById("jobs");
 
-jobs.forEach((job, index
+jobs.forEach((job, index) => {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.style.animationDelay = `${index * 0.08}s`;
+
+  const icon = document.createElement("i");
+  icon.className = `fas fa-${job.icon}`;
+
+  const title = document.createElement("h2");
+  title.textContent = job.title;
+
+  const traditional = document.createElement("section");
+  traditional.innerHTML = `<span>Traditional Role</span>${job.traditional}`;
+
+  const ai = document.createElement("section");
+  ai.className = "ai-info";
+  ai.innerHTML = `<span>AI + Human Integration</span>${job.aiIntegration}`;
+
+  card.appendChild(icon);
+  card.appendChild(title);
+  card.appendChild(traditional);
+  card.appendChild(ai);
+
+  card.addEventListener("click", () => {
+    card.classList.toggle("expanded");
+  });
+
+  container.appendChild(card);
+});
+
 
 
 
