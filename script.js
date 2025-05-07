@@ -10,60 +10,8 @@ const jobs = [
   { title: "Chemical Engineer", icon: "flask", traditional: "Designs processes for producing fuels, drugs, and materials.", aiIntegration: "Models chemical reactions and predicts new compounds using AI chemistry platforms." },
   { title: "Industrial Engineer", icon: "warehouse", traditional: "Optimizes manufacturing and logistics processes.", aiIntegration: "Uses predictive AI to forecast machine failures and balance production loads." },
   { title: "Materials Engineer", icon: "cube", traditional: "Develops new materials for aerospace, biomedical, and electronics.", aiIntegration: "Trains AI models to find high-performance material blends from datasets." },
-  { title: "Automotive Engineer", icon: "car", traditional: "Designs vehicles and their electronic systems.", aiIntegration: "Collaborates on AI-enhanced self-driving features using sensor fusion." },
-  { title: "Nuclear Engineer", icon: "radiation", traditional: "Designs and monitors systems involving nuclear energy.", aiIntegration: "Applies AI to watch reactor sensor data and prevent thermal or radiation leaks." }
-];
+  { title: "Automotive Engineer", icon: "car", traditional: "Designs vehicles and their electronic systems.", aiIntegration: "Collaborates on AI-enhanced self-driving features using sensor fusion
 
-// Job cards section (dynamically populated)
-const container = document.getElementById("jobs");
-
-jobs.forEach((job, index) => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.style.animationDelay = `${index * 0.08}s`;
-
-  const icon = document.createElement("i");
-  icon.className = `fas fa-${job.icon}`;
-
-  const title = document.createElement("h2");
-  title.textContent = job.title;
-
-  const traditional = document.createElement("section");
-  traditional.innerHTML = `<span>Traditional Role</span>${job.traditional}`;
-
-  const ai = document.createElement("section");
-  ai.className = "ai-info";
-  ai.innerHTML = `<span>AI + Human Integration</span>${job.aiIntegration}`;
-
-  card.appendChild(icon);
-  card.appendChild(title);
-  card.appendChild(traditional);
-  card.appendChild(ai);
-
-  card.addEventListener("click", () => {
-    card.classList.toggle("expanded");
-  });
-
-  container.appendChild(card);
-});
-
-// Page navigation
-function showPage(page) {
-  const pages = document.querySelectorAll('.page');
-  pages.forEach(p => p.classList.add('hidden'));
-  document.getElementById(page).classList.remove('hidden');
-}
-
-// Show active tab content
-function showTab(tab) {
-  const contents = document.querySelectorAll('.tab-content');
-  contents.forEach(content => content.classList.add('hidden'));
-  document.getElementById(tab).classList.remove('hidden');
-}
-
-// Initial page load
-showPage('jobs');
-showTab('efficiency');
 
 
 
